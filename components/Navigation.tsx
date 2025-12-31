@@ -48,7 +48,9 @@ const Navigation: React.FC = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'py-4 bg-brand-bg/80 backdrop-blur-xl border-b border-brand-border' : 'py-6 bg-transparent'
+      isScrolled
+        ? 'py-4 bg-brand-bg/70 backdrop-blur-2xl border border-brand-border/60 shadow-lg shadow-black/20'
+        : 'py-6 bg-brand-bg/40 backdrop-blur-xl border border-transparent'
     }`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -105,7 +107,7 @@ const Navigation: React.FC = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-brand-bg/95 backdrop-blur-2xl border-b border-brand-border p-6 flex flex-col gap-4 md:hidden">
+        <div className="absolute top-full left-0 right-0 bg-brand-bg/85 backdrop-blur-2xl border-b border-brand-border/80 p-6 flex flex-col gap-4 md:hidden shadow-xl shadow-black/20">
           {navItems.map((item) => (
             <a
               key={item.label}

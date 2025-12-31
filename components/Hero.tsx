@@ -71,6 +71,22 @@ const Hero: React.FC = () => {
           <div className="relative z-10 rounded-3xl p-8 md:p-10 bg-brand-panel border border-brand-border shadow-2xl overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-brand-accent/10 via-transparent to-brand-accent2/10" />
             <div className="relative space-y-6">
+              <div className="flex items-center gap-4">
+                <div className="relative w-20 h-20 rounded-2xl overflow-hidden border border-brand-border shadow-lg shadow-black/30">
+                  <img
+                    src="/profile.jpg"
+                    alt="Portrait of Tejas Rai"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 ring-2 ring-brand-accent/60 rounded-2xl pointer-events-none" />
+                </div>
+                <div>
+                  <p className="text-sm text-brand-muted uppercase tracking-[0.28em]">Currently</p>
+                  <p className="text-xl font-bold text-white leading-tight">Senior Developer</p>
+                  <p className="text-brand-muted">Zuari Industries</p>
+                </div>
+              </div>
+
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-accent/10 border border-brand-accent/20 text-brand-accent text-xs font-bold uppercase tracking-widest">
                 <Sparkles size={14} />
                 Delivery Snapshot
